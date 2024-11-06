@@ -13,6 +13,7 @@
      - Probably need a preset for each grade for a comprehensive draft report, otherwise I would have to implement AI to create one which might be too difficult.
      - Have to make sure to take out already drafted players, otherwise user can choose the same player at multiple positions.
      - Maybe want to implement more options for different league types...? Best ball vs. H2H vs. dynasty, etc.
+     - # EDIT # pictures will be difficult to import so I have decided on not implementing pictures for now. This will be added if I have enough time. League types will also be dependent on if I can find a way to adjust scoring with previously imported players.
 2. Automatic roster
    - Richard sends the application to a friend who just drafted on Sleeper. His friend uses the application but instead imports his own league and draft settings through Sleeper. Questions were still asked based on player positions when drafting, but the process was significantly faster.
 
@@ -22,3 +23,5 @@
 - Query will return as strings and images that the user can save into a PNG if they wish.
 - Each player will have an analysis taken from the Sleeper API while the comprehensive review will be hard coded based on what grade is chosen for the draft.
 - Draft grades will be given based on the deviation from ADP, with a draft that is exact to the predicted ADP being average.
+- # EDIT # this will be dependent on the API I decide to use. Current Sleeper API doesn't provide this information outright for me so I have to do some searching.
+- # EDIT # unfortunately, I do not think importing drafts automatically will be available as I cannot seem to find a way to do it within Sleeper.
