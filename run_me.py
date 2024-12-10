@@ -12,16 +12,16 @@ class DraftApp(tk.Tk):
         self.title("Fantasy League Draft")
         self.geometry("500x600")
 
-        self.player_dict = self.read_players("players.json")
+        self.player_dict = self.read_players("assets/players.json")
         self.user_draft = []
         self.draft_positions = []
 
-        self.standard_json = self.csv_to_json("beatadp_standard_combined__sleeper_rankings.csv", "standard.json")
-        self.half_ppr_json = self.csv_to_json("beatadp_halfppr_combined__sleeper_rankings.csv", "half ppr.json")
-        self.full_ppr_json = self.csv_to_json("beatadp_ppr_combined__sleeper_rankings.csv", "full ppr.json")
-        self.standard = self.read_players("standard.json")
-        self.half_ppr = self.read_players("half ppr.json")
-        self.full_ppr = self.read_players("full ppr.json")
+        self.standard_json = self.csv_to_json("assets/beatadp_standard_combined__sleeper_rankings.csv", "assets/standard.json")
+        self.half_ppr_json = self.csv_to_json("assets/beatadp_halfppr_combined__sleeper_rankings.csv", "assets/half ppr.json")
+        self.full_ppr_json = self.csv_to_json("assets/beatadp_ppr_combined__sleeper_rankings.csv", "assets/full ppr.json")
+        self.standard = self.read_players("assets/standard.json")
+        self.half_ppr = self.read_players("assets/half ppr.json")
+        self.full_ppr = self.read_players("assets/full ppr.json")
 
         self.x = 0
 
